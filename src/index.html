@@ -8,6 +8,16 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <script>
+     //easy but not very good way to inject
+    function initMap() {
+      window.google = google
+    }
+  </script>
+
+  <script  defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAjga35ZSDyJSKOuOHS_rn_2Kb911t13k&callback=initMap">
+  </script>
   <app-root></app-root>
 </body>
 </html>

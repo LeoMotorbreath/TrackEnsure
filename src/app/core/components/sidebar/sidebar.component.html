@@ -1,0 +1,17 @@
+<div class="sb-container">
+  <div *ngFor="let el of assets" class="sb-elem" (click)="selectAsset(el)">
+    <div>
+      {{el.name}}
+    </div>
+
+    <div>
+      {{el.position.lat}}
+    </div>
+
+    <div>
+      {{el.position.lng}}
+    </div>
+
+  </div>
+</div>
+
